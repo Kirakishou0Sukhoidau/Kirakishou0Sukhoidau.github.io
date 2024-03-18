@@ -1,7 +1,6 @@
 @media(min-width: 720px) {
-  html {height: 650px;}
- h1 {top: 0px;}
- .top {float: left;} 
+  html {height: 800px;}
+ h1 {top: 0px;} 
   #home a {right: 5px;
            top: 5px;
     display: block;
