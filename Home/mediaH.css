@@ -13,7 +13,9 @@
       transition: all 0.3s ease-in-out;
       color: rgba(255,255,255,0.3);
 } 
-
+.top>#home {position: fixed;
+            right: 0px;
+            top 0px;}
 
  #lb2 {position: absolute;
       margin-top: 0%;
@@ -62,9 +64,5 @@
                    border: 1px solid white;
 }
    
- }
-
- @media(min-width: 1080px) {
-   body {font-size: 100px;}
  }
 
