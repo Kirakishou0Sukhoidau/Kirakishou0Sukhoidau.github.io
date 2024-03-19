@@ -57,6 +57,15 @@ gachaButton.addEventListener("click", () => {
     alert(`Kết quả là: ${randomData}`);
 });
 
+const resetqButton = document.getElementById("resetq");
+
+resetqButton.addEventListener("click", () => {
+    const allInputsq = document.querySelectorAll("input[type='number']");
+    for (const input of allInputsq) {
+        input.value = "";
+    }
+});
+
   const resetButton = document.getElementById("reset");
 
 resetButton.addEventListener("click", () => {
