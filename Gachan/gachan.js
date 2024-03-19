@@ -32,7 +32,7 @@ addInputButton.addEventListener("click", () => {
     const newInput = document.createElement("input");
     newInput.type = "text";
     newInput.name = "data";
-    newInput.placeholder = "Nhập số hoặc tên";
+    newInput.placeholder = "Nhập dữ liệu";
     newInput.style.margin = "2px"; // Thêm margin cho mỗi ô input
     inputs.appendChild(newInput);
 });
