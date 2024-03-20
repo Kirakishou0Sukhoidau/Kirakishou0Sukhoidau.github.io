@@ -275,7 +275,7 @@ button#submit-quet {width: 85px;}
     z-index: 1;
   }
     .mui-ten-cheo::after {
-  content: "♥️";
+  content: "♣️";
   position: absolute;
   top: 50%;
   left: 50%;
