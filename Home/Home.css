@@ -25,7 +25,7 @@ header {z-index: +10;}
 nav {display: block;}
 
 html {position: relative;
-      background-color: violet;  /* background-image: url("../image/bg2nmp2.webp");*/ //image/bg2nmp2webp bg2-1_webp
+     /* background-color: violet; */ background-image: url("../image/bg2nmp2.webp"); //image/bg2nmp2webp bg2-1_webp
       position: center center;
       background-size: cover;
       max-width: 1080px;
