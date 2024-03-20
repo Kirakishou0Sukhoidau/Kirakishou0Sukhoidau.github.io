@@ -71,7 +71,7 @@ function tinhLaiKep() {
   // Sửa lỗi: Lấy lũy thừa của (1 + laiSuat)
  /* tongTien = tongTien.toFixed(0);*/
   tongTien = tongTien.toLocaleString('vi-VN');
-  document.getElementById("Dapso").innerHTML = `Tổng số tiền sau ${soNam} đợt là: ${tongTien.toLocaleString()} VND`;
+  document.getElementById("Dapso").innerHTML = `Tổng số tiền sau ${soNam} đợt là: ${tongTien.toLocaleString()} VNĐ`;
 }
 
 
