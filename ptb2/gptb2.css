@@ -1,11 +1,28 @@
-html {padding: 5px;}
-h1 {margin-top: 10px;}
+html {padding: 5px;
+     font-family: Arial;
+}
+h1 {margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+
+
 button{border: 1px solid black;
   padding: 1px;
 }
 input {width: 50px;
       border: 1px solid black;
               margin: 1px;
+}
+#gptb2, #tlk {border: 1px solid black;
+     padding: 3px;
+     margin: 5px;
+}
+#tpt {border: 1px solid black;
+    margin: 5px;
+  padding: 25px;
+    text-align: center;
 }
 
 #tpt input {width: 20%;}
