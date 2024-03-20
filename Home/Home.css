@@ -262,6 +262,28 @@ button#submit-quet {width: 85px;}
  }
 
 
+  .mui-ten-cheo {
+   bottom: 0px;
+   left: 0px;
+  /*  align-items: center;*/
+   position: fixed;
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+    background-color: purple;
+    padding: 10px;
+    z-index: 1;
+  }
+    .mui-ten-cheo::after {
+  content: "♥️";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+    }
+
+
 .mui-ten-len::after {
   content: "♥️";
   position: absolute;
