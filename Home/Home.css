@@ -24,7 +24,8 @@ header {z-index: +10;}
 
 nav {display: block;}
 
-html {position: relative;
+html {user-select: none;
+      position: relative;
       position: center center;
       max-width: 1080px;
       display: flex;
