@@ -8,7 +8,7 @@ html {position: relative;
       user-select: none;
 }
 body {background: black;
-  /*background-image: url("../image/bg2nmp2.webp"); *//*image/bg2nmp2webp bg2-1_webp*/
+   /*display: none; */
       background-size: 100% 100%;
       background-repeat: no-repeat;
       background-attachment: fixed;
