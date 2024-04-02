@@ -418,8 +418,9 @@ input:after:first-child {
     .nnp li a {
       background-color: palevioletred;
       color: wheat;
-      
+      text-decoration: none;
     }
+
  b {font-weight: bold;}
    .Hello {border: 1px solid black;
      color: purple; 
