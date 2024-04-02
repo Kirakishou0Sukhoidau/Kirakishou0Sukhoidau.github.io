@@ -419,6 +419,7 @@ input:after:first-child {
       background-color: palevioletred;
       color: wheat;
       text-decoration: none;
+      display: block;
     }
 
  b {font-weight: bold;}
