@@ -747,6 +747,18 @@ viiideos.forEach(video => {
           case "yandere":
           url = "https://yande.re/post?tags=" + query;
           break;
+          case "itemtoram":
+          url = "https://coryn.club/item.php?name=" + query;
+          break;
+           case "quaitoram":
+          url = "https://coryn.club/monster.php?name=" + query;
+          break;
+           case "lvltoram":
+          url = "https://coryn.club/leveling.php?lv=" + query;
+          break;
+           case "maptoram":
+          url = "https://coryn.club/map.php?name=" + query;
+          break;
       }
   
       window.location.href = url;
