@@ -371,9 +371,11 @@ input:after:first-child {
     padding: 0 0.125em;
     border: 2px solid black;
   }
+
  select {width: max-content;
     background-color: pink;
     padding: 0 0.125em;
+    text-align: center;
     border: 1px solid black;
   }
   
