@@ -475,7 +475,7 @@ input:after:first-child {
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
-    width: 100px;
+    width: max-content;
     height: 20px;
     background-color: pink;
     border: 1px solid black;
