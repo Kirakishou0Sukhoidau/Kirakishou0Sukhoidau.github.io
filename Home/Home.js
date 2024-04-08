@@ -762,6 +762,9 @@ viiideos.forEach(video => {
            case "maptoram":
           url = "https://coryn.club/map.php?name=" + query;
           break;
+        case "qtm":
+          url = "https://quantrimang.com/s/?q=" + query;
+          break;
       }
   
       window.location.href = url;
