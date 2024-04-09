@@ -765,6 +765,9 @@ viiideos.forEach(video => {
         case "qtm":
           url = "https://quantrimang.com/s/?q=" + query;
           break;
+          case "fd":
+          url = "https://" + query + ".fandom.com/";
+          break;
       }
   
       window.location.href = url;
