@@ -768,6 +768,9 @@ viiideos.forEach(video => {
           case "fd":
           url = "https://" + query + ".fandom.com/";
           break;
+          case "tdwk":
+          url = "https://vi.m.wiktionary.org/wiki/" + query;
+          break;
       }
   
       window.location.href = url;
