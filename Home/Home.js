@@ -71,6 +71,20 @@ AnHien.addEventListener("click", function() {
 
 //load
 
+//xoa-chu-input
+const resettkButton = document.querySelector(".reset");
+
+resettkButton.addEventListener("click", function() {
+  const inputrsElementtk = document.querySelector(".search input");
+  inputrsElementtk.value = "";
+});
+
+const resettkButton2 = document.querySelector(".reset2");
+
+resettkButton2.addEventListener("click", function() {
+  const inputrsElementtk2 = document.querySelector("#form-quet #input-quet");
+  inputrsElementtk2.value = "";
+});
 
 
 //chu-chay
