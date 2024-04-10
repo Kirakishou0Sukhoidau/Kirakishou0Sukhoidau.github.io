@@ -771,7 +771,7 @@ viiideos.forEach(video => {
           url = "https://coryn.club/monster.php?name=" + query;
           break;
            case "lvltoram":
-          url = "https://coryn.club/leveling.php?lv=" + query;
+          url = "https://coryn.club/leveling.php?lv=" + query + "&gap=7";
           break;
            case "maptoram":
           url = "https://coryn.club/map.php?name=" + query;
