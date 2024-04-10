@@ -786,8 +786,9 @@ viiideos.forEach(video => {
           url = "https://vi.m.wiktionary.org/wiki/" + query;
           break;
       }
-  
-      window.location.href = url;
+  window.open(url, '_blank');
+  //mo-o-mot trang
+   /*window.location.href = url;*/
     });}
 
 
