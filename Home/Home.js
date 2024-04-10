@@ -143,7 +143,7 @@ function generateRandomString(length) {
 
 // Hàm cập nhật nội dung thẻ div
 function updateContent() {
-  rdccc.textContent = generateRandomString(Math.floor(Math.random() * 10) + 5);
+  rdccc.textContent = generateRandomString(Math.floor(Math.random() * 20) + 5);
 }
 
 // Delay 5s trước khi hiển thị nội dung
