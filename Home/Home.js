@@ -165,7 +165,7 @@ setTimeout(() => {
 
 
     // Tạo mảng chứa ID của các thẻ div
-    const divIds = ["so1", "so2", "so3", "so4", "so5", "so6"];
+    const divIds = ["so1", "so2", "so3", "so4", "so5", "so6", "so7", "so8", "so9", "so10"];
 
     // Tạo hàm hiển thị ngẫu nhiên một thẻ div
     function showRandomDiv() {
