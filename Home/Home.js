@@ -777,6 +777,12 @@ viiideos.forEach(video => {
            case "maptoram":
           url = "https://coryn.club/map.php?name=" + query;
           break;
+           case "nct":
+          url = "https://www.nhaccuatui.com/tim-kiem?q=" + query;
+          break;
+           case "zing-mp3":
+          url = "https://zingmp3.vn/tim-kiem/tat-ca?q=" + query;
+          break;
            case "ytb":
           url = "https://youtube.com/results?sp=mAEA&search_query=" + query;
           break;
