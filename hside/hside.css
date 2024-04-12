@@ -126,6 +126,11 @@ figure figcaption {
   height: 80vh;
 }
 
+ .slideshow-main-image video{
+  width: 100%;
+  height: 80vh;
+}
+
 
 
 
