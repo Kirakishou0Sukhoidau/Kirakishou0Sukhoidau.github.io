@@ -1,5 +1,68 @@
 //Slideshow
 const mainImage = document.querySelector(".slideshow-main-image img");
+const mainVideo = document.querySelector("#mainVideo");
+const thumbnails = document.querySelectorAll(".slideshow-thumbnails img, .slideshow-thumbnails video"); // Include videos
+let currentIndex = 0; // Current media index
+
+// Function to change main media based on clicked thumbnail or button click
+function changeMedia(mediaElement) {
+  const isVideo = mediaElement.tagName.toLowerCase() === "video"; // Check for video element
+
+  // Reset main image/video display
+  mainImage.style.display = "none";
+  mainVideo.style.display = "none";
+
+  // Update current media index
+  currentIndex = Array.prototype.indexOf.call(thumbnails, mediaElement);
+
+  if (isVideo) {
+    // Play video and display it
+    mainVideo.src = mediaElement.src;
+    mainVideo.play();
+    mainVideo.style.display = "block";
+  } else {
+    // Show image
+    mainImage.src = mediaElement.src;
+    mainImage.style.display = "block";
+  }
+}
+
+// Add click event listeners for thumbnails
+thumbnails.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", () => changeMedia(thumbnail));
+});
+
+// Add click event listeners for prev and next buttons (if they exist)
+const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("next-button");
+
+if (prevButton) {
+  prevButton.addEventListener("click", () => {
+    if (currentIndex === 0) {
+      currentIndex = thumbnails.length - 1;
+    } else {
+      currentIndex--;
+    }
+    changeMedia(thumbnails[currentIndex]);
+  });
+}
+
+if (nextButton) {
+  nextButton.addEventListener("click", () => {
+    if (currentIndex < thumbnails.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    changeMedia(thumbnails[currentIndex]);
+  });
+}
+
+
+
+
+/*
+const mainImage = document.querySelector(".slideshow-main-image img");
 const thumbnails = document.querySelectorAll(".slideshow-thumbnails img");
 let currentIndex = 0; // Current image index
 
@@ -45,7 +108,7 @@ if (prevButton) {
 if (nextButton) {
   nextButton.addEventListener("click", nextImage);
 }
-
+*/
 
 
 
