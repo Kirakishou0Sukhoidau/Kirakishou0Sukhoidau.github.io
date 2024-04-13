@@ -82,5 +82,5 @@ button.addEventListener('click', () => {
     const randomIndex = Math.floor(Math.random() * letters.length);
     const randomLetter = letters[randomIndex];
 
-    alert(`Kết quả là: ${randomLetter}`);
+    alert(`Đáp án là: ${randomLetter}`);
 });
