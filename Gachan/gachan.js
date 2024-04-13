@@ -74,3 +74,13 @@ resetButton.addEventListener("click", () => {
         input.value = "";
     }
 });
+
+const button = document.getElementById('abcd');
+
+button.addEventListener('click', () => {
+    const letters = ['A', 'B', 'C', 'D'];
+    const randomIndex = Math.floor(Math.random() * letters.length);
+    const randomLetter = letters[randomIndex];
+
+    alert(`Kết quả là: ${randomLetter}`);
+});
