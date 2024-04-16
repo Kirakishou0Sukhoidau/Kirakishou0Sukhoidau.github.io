@@ -11,6 +11,21 @@ document.addEventListener('keydown', function(event) {
 });
 
 
+
+//toan-man-hinh
+const fullScreenButton = document.getElementById('thu-phong');
+
+fullScreenButton.addEventListener('click', () => {
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+  } else {
+    document.documentElement.requestFullscreen();
+  }
+});
+
+
+
+
 //ngan-quay-lai
 /*window.addEventListener('beforeunload', function(event) {
   event.preventDefault();
