@@ -70,54 +70,6 @@ body {background: purple;
 }
 
 
-/*#load-animation {border: 5px dashed white;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  padding: 3px;
-  
- animation: ring 30s linear infinite;
-}
-@keyframes ring {
-  to {
-    transform: rotate(360deg);
-  }
-}*/
-
-#tong-load {
-  margin-top: 50vh;
-  text-align: center;
-  overflow: hidden;
-  display: none;
-}
-
-#rdcc {
-    margin: 0 auto;
-   width: max-content;
-}
-
-#dtx {text-align: center;
-  
-  width: 100%;
-}
-
-#loading {
-  list-style: none;
-    position: fixed;
-  margin-bottom: 2px;
-  margin-right: 5px;
-  pointer-events: none;
-}
-
-
-
-#loadi {
-  pointer-events: none;
-  margin: 5px;
-  padding: 1px;
-  font-size: 50px;
-}
-#load {pointer-events: none;}
 
 #hien-bg {/*background-image: url("https://pbs.twimg.com/media/FvJVIlIaQAETaXe?format=jpg&name=large");
   background-size: 100% 100%;*/
@@ -205,26 +157,6 @@ body {background: purple;
   
 }
 
-#loadi {align-items: right;
-  color: white;
-  font-size: 1.2em
-}
-#load {
-  
-  width: 0vh;
-  left: 0px;
-  bottom: 0px;
-  height: 2px;
-
-  background-color: white;
-  animation: load 120s linear infinite;
-}
-
-@keyframes load {
-   to {opacity: 1;
-      width: 100vh;
-    }
-}
 
 
 .chu-chay {
@@ -250,22 +182,6 @@ body {background: purple;
 
 /* Keyframes cho hiệu ứng delay */
 
-@keyframes delay-cycle {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/* Áp dụng hiệu ứng delay */
 
 .chu-chay span {
   animation: delay-cycle 5s infinite ease-in-out;
