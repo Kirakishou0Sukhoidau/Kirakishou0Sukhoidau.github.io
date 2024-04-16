@@ -103,39 +103,6 @@ resettkButton2.addEventListener("click", function() {
 
 
 //chu-chay
-/*const text = "Kirakishou";
-const element = document.getElementById("chu-chay");
-
-let index = 0;
-let currentText = "";
-
-const interval = setInterval(() => {
-  if (index === text.length) {
-    clearInterval(interval);
-    return;
-  }
-
-  const char = text[index];
-
-  if (currentText.length === index) {
-    currentText += char;
-    element.textContent = currentText;
-  } else {
-    element.textContent = currentText + char;
-    setTimeout(() => {
-      element.textContent = currentText;
-    }, 100);
-  }
-
-  index++;
-}, 500);*/
-
-/*const spans = document.querySelectorAll(".chu-chay span");
-
-for (let i = 0; i < spans.length; i++) {
-  spans[i].style.animationDelay = `${i * 0.5}s`;
-} */
-
 const spans = document.querySelectorAll(".chu-chay span");
 
 for (let i = 0; i < spans.length; i++) {
@@ -204,7 +171,7 @@ setTimeout(() => {
 
 
 
-const mainImage = document.querySelector(".slideshow-main-image img");
+/*const mainImage = document.querySelector(".slideshow-main-image img");
 const thumbnails = document.querySelectorAll(".slideshow-thumbnails img");
 let currentIndex = 0; // Current image index
 
@@ -212,7 +179,7 @@ let currentIndex = 0; // Current image index
 function changeImage(image) {
   mainImage.src = image.src;
   currentIndex = Array.prototype.indexOf.call(thumbnails, image);
-}
+}*/
 
 // Handle previous image button click
 /*function prevImage() {
