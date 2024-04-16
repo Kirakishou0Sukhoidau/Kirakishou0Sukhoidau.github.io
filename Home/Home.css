@@ -6,7 +6,7 @@
 .an-hien {background-color: black;
   position: fixed;
   bottom: 5px;
-  color: white;
+ /* color: white;*/
   padding: 1px;
   transition: all 0.5s ease-in-out;
 }
