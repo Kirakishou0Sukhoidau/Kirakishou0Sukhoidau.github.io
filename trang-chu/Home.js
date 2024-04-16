@@ -34,7 +34,6 @@ fullScreenButton.addEventListener('click', () => {
 
 
 
-
 //xoa-chu-input
 const resettkButton = document.querySelector(".reset");
 
@@ -58,6 +57,84 @@ for (let i = 0; i < spans.length; i++) {
   spans[i].style.animationDelay = `${i * 0.5}s`;
 }
 
+
+
+
+
+
+/*const mainImage = document.querySelector(".slideshow-main-image img");
+const thumbnails = document.querySelectorAll(".slideshow-thumbnails img");
+let currentIndex = 0; // Current image index
+
+// Function to change main image based on clicked thumbnail or button click
+function changeImage(image) {
+  mainImage.src = image.src;
+  currentIndex = Array.prototype.indexOf.call(thumbnails, image);
+}*/
+
+// Handle previous image button click
+/*function prevImage() {
+  if (currentIndex >= 0) {
+    currentIndex--;
+    mainImage.src = thumbnails[currentIndex].src;
+  }
+}*/
+
+//duoi
+/*function prevImage() {
+  if (currentIndex === 0) {
+    currentIndex = thumbnails.length - 1; // Quay lại ảnh cuối cùng
+  } else {
+    currentIndex--;
+  }
+  mainImage.src = thumbnails[currentIndex].src;
+}*/
+
+
+
+// Handle next image button click
+/*function nextImage() {
+  if (currentIndex < thumbnails.length) {
+    currentIndex++;
+    mainImage.src = thumbnails[currentIndex].src;
+  }
+}*/
+
+
+//duoi
+/*
+function nextImage() {
+  if (currentIndex < thumbnails.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0; // Quay lại ảnh đầu tiên khi ở ảnh cuối cùng
+  }
+  mainImage.src = thumbnails[currentIndex].src;
+}
+
+
+
+// Add click event listeners for thumbnails
+thumbnails.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", () => changeImage(thumbnail));
+});
+
+// Add click event listeners for prev and next buttons (if they exist)
+const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("next-button");
+
+if (prevButton) {
+  prevButton.addEventListener("click", prevImage);
+}
+
+if (nextButton) {
+  nextButton.addEventListener("click", nextImage);
+}
+
+// Optional: Auto-play slideshow after 5 seconds
+//setInterval(nextImage, 2000);
+
+/* //dang phong an
 
 
 
