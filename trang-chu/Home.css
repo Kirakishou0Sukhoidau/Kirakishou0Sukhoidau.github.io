@@ -374,12 +374,13 @@ input:after:first-child {
     }
 
  b {font-weight: bold;}
-   .Hello {border: 1px solid black;
-     color: purple; 
-     display: inline;
-   /*  text-align: center;
-     margin: 0 auto;
-     ;*/
+
+   .Hello {
+     color: violet; 
+       
+   /*  text-align: center;*/
+     /*margin: 0 auto;*/
+  /*   ;*/
      
    }
 
@@ -437,27 +438,7 @@ input:after:first-child {
   font-site: 1.2em; 
   text-align: center;}
 
-/*  .mui-ten-cheo {
-   /*bottom: 0px;
-   left: 0px;*/
-/*    right: -43%;
-    position: relative;
-    height: 50px;
-    border-radius: 50%;
-    width: 50px;
-    background-color: rgb(153, 102, 204);
-    padding: 0.625em;
-  /*  z-index: -1;*/
-/*  }
-    .mui-ten-cheo::after {
-  content: "♣️";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  text-align: center;
-    }*/
-
+/*
 
 /*.mui-ten-len::after {
   content: "♥️";
