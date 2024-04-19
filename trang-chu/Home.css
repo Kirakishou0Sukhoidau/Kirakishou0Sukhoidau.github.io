@@ -218,7 +218,7 @@ body {background: purple;
 /* Áp dụng hiệu ứng delay */
 
 .chu-chay span {
-  animation: delay-cycle 5s infinite ease-in-out;
+  animation: delay-cycle 7s infinite ease-in-out;
 }
 
 
