@@ -161,6 +161,11 @@ figure figcaption {
   border: 1px solid #ddd;
 }
 
+
+.slideshow-thumbnails video {
+  border: 2px dashed green;
+}
+
 /*.slideshow-controls {
   width: 100%;
   text-align: center;
