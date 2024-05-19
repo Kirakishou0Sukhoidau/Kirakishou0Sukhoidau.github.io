@@ -678,6 +678,9 @@ viiideos.forEach(video => {
           case "fd":
           url = "https://" + query + ".fandom.com/";
           break;
+          case "apkpure":
+          url = "https://apkpure.com/search?q=" + query;
+          break;
           case "tdwk":
           url = "https://vi.m.wiktionary.org/wiki/" + query;
           break;
