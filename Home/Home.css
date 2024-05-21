@@ -553,6 +553,10 @@ input:after:first-child {
     border: 1px solid black;
 
  }
+
+.pul-bq {color: black;
+  background: rgba(206, 178, 207, 0.7);
+}
  
   .ul-bq {background-color: rgb(200, 200, 250);
               padding: 0.625em;
