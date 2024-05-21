@@ -559,6 +559,8 @@ input:after:first-child {
   }
  
   .ul-bq {background-image: url('../image/anp.webp');
+    background-repeat: no repeat;
+    background-size: 100% 100%;
               padding: 0.625em;
               bottom: 1%;
               height: 98%;
