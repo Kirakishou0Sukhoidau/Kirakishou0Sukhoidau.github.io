@@ -555,10 +555,10 @@ input:after:first-child {
  }
 
 .pul-bq {color: black;
-  background: rgba(206, 178, 207, 0.7);
-}
+  background-color: rgba(255,255,255,0.5);
+  }
  
-  .ul-bq {background-color: rgb(200, 200, 250);
+  .ul-bq {background-image: url('../image/anp.webp');
               padding: 0.625em;
               bottom: 1%;
               height: 98%;
