@@ -298,6 +298,7 @@ input:after:first-child {
          margin-bottom: 2px;
          position: center;
          position: relative;
+         border: 1.5px solid rgb(135, 206, 250);
        }
  
 
