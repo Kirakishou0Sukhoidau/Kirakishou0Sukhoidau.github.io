@@ -56,7 +56,7 @@ AnHien.addEventListener("click", function() {
       AnHien.style.color = "black";
   } else {
     // Khi hiện
-    AnHien.textContent = "©Copyright 2024, Kirakishou (Kiara)";
+    AnHien.textContent = "©2024, Kirakishou";
       AnHien.style.color = "white";
     divWrapper.style.backgroundColor = "";
       lood.style.display = "none";
