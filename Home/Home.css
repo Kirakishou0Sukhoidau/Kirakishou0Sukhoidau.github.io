@@ -538,7 +538,7 @@ input:after:first-child {
 
 
   .mui-ten-len {
-   background-image: url("../image/anp1-1.webp");
+   background-image: url("../image/mtl1.webp");
     opacity: 1;
     background-size: 100% 100%;
    bottom: 0px;
@@ -558,7 +558,7 @@ input:after:first-child {
   background-color: rgba(255,255,255,0.2);
   }
  
-  .ul-bq {background-image: url('../image/anp1.webp');
+  .ul-bq {background-image: url('../image/anp1-1.webp');
     background-repeat: no repeat;
     background-size: 100% 100%;
               padding: 0.625em;
