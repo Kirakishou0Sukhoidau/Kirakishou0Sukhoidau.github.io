@@ -53,9 +53,11 @@ AnHien.addEventListener("click", function() {
     AnHien.textContent = "Kirakishou";
     divWrapper.style.backgroundColor = "transparent";
       loadi.style.display = "none";
+      AnHien.style.color = "black";
   } else {
     // Khi hiện
-    AnHien.textContent = "Ẩn/Hiện";
+    AnHien.textContent = "©Copyright 2024, Kirakishou (Kiara)";
+      AnHien.style.color = "white";
     divWrapper.style.backgroundColor = "";
       lood.style.display = "none";
       loadi.style.display = "none";
