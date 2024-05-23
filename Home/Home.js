@@ -70,7 +70,7 @@ let isHidden = true;
 AnHien.addEventListener("click", function() {
   if (isHidden) {
     // Hiển thị background image
-    body.style.backgroundImage = "url(../image/bg3.webp)";
+    body.style.backgroundImage = "url(../image/bg3-1.webp)";
       load.style.display = "none";
       loadi.style.display = "none";
       lood.style.display = "none";
