@@ -307,7 +307,7 @@ doiBgElement.addEventListener("click", function() {
 
 
 //doi-4mat
-onst switchButton = document.getElementById('switch-pass');
+const switchButton = document.getElementById('switch-pass');
 const iframe = document.querySelector('.vo'); // Lấy iframe có class "vo"
 
 let isPassword = false;
@@ -328,7 +328,7 @@ switchButton.addEventListener('click', () => {
   if (ishside) {
     iframe.src = '../hside/hside.html';
   } else {
-    iframe.src = 'https://video.twimg.com/ext_tw_video/1793746588835151872/pu/vid/avc1/480x600/A5uk5GX1yeCzXXgA.mp4?tag=12';
+    iframe.src = 'https://video.twimg.com/ext_tw_video/1793746588835151872/pu/vid/avc1/480x600/A5uk5GX1yeCzXXgA.mp4';
   }
   ishside = !ishside;
 });
