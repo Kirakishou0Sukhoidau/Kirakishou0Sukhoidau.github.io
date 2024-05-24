@@ -309,7 +309,7 @@ doiBgElement.addEventListener("click", function() {
 //doi-4mat
 const switchButton = document.getElementById('switch-pass');
 const inputs = document.querySelectorAll('input');
-const nganAoDiv = document.querySelector('.ngan-ao');
+const nganAoDivs = document.querySelectorAll('.ngan-ao'); // Lấy tất cả các thẻ
 const iframe = document.querySelector('.vo');
 
 let isPassword = false;
@@ -327,7 +327,7 @@ switchButton.addEventListener('click', () => {
   }
   isPassword = !isPassword;
 
-  // Ẩn/hiện thẻ div `ngan-ao`
+  // Ẩn/hiện tất cả các thẻ div `ngan-ao`
   doubleClickCount++;
 
   if (doubleClickTimeout) {
@@ -336,7 +336,7 @@ switchButton.addEventListener('click', () => {
 
   doubleClickTimeout = setTimeout(() => {
     if (doubleClickCount === 2) {
-      nganAoDiv.classList.toggle('hidden');
+      nganAoDivs.forEach(nganAoDiv => nganAoDiv.classList.toggle('hidden'));
     }
 
     doubleClickCount = 0;
@@ -351,17 +351,16 @@ switchButton.addEventListener('click', () => {
 
   tripleClickTimeout = setTimeout(() => {
     if (tripleClickCount === 3) {
-      if (iframe.src === 'https://video.twimg.com/ext_tw_video/1793746588835151872/pu/vid/avc1/480x600/A5uk5GX1yeCzXXgA.mp4') {
+      if (iframe.src === 'https://video.twimg.com/ext_tw_video/1793746588835151872/pu/vid/avc1/480x600/A5uk5GX1yeCzXXgA.mp4?tag=12') {
         iframe.src = '../hside/hside.html';
       } else {
-        iframe.src = 'https://video.twimg.com/ext_tw_video/1793746588835151872/pu/vid/avc1/480x600/A5uk5GX1yeCzXXgA.mp4';
+        iframe.src = 'https://video.twimg.com/ext_tw_video/1793746588835151872/pu/vid/avc1/480x600/A5uk5GX1yeCzXXgA.mp4?tag=12';
       }
     }
 
     tripleClickCount = 0;
   }, 1000); // 1 giây
 });
-
 
 
 
