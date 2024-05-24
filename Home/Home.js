@@ -306,10 +306,12 @@ doiBgElement.addEventListener("click", function() {
 
 
 
-//doi-input
-const switchButton = document.getElementById('switch-pass');
+//doi-4mat
+onst switchButton = document.getElementById('switch-pass');
+const iframe = document.querySelector('.vo'); // Lấy iframe có class "vo"
 
 let isPassword = false;
+let ishside = true; // Biến lưu trạng thái src của iframe (mặc định là web)
 
 switchButton.addEventListener('click', () => {
   const inputs = document.querySelectorAll('input'); // Lấy tất cả input
@@ -321,7 +323,16 @@ switchButton.addEventListener('click', () => {
   }
 
   isPassword = !isPassword;
+
+  // Chuyển đổi src của iframe
+  if (ishside) {
+    iframe.src = '../hside/hside.html';
+  } else {
+    iframe.src = 'https://video.twimg.com/ext_tw_video/1793746588835151872/pu/vid/avc1/480x600/A5uk5GX1yeCzXXgA.mp4?tag=12';
+  }
+  ishside = !ishside;
 });
+
 
 
 
