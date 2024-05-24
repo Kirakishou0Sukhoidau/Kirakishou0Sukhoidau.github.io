@@ -308,29 +308,58 @@ doiBgElement.addEventListener("click", function() {
 
 //doi-4mat
 const switchButton = document.getElementById('switch-pass');
-const iframe = document.querySelector('.vo'); // Lấy iframe có class "vo"
+const inputs = document.querySelectorAll('input');
+const nganAoDiv = document.querySelector('.ngan-ao');
+const iframe = document.querySelector('.vo');
 
 let isPassword = false;
-let ishside = true; // Biến lưu trạng thái src của iframe (mặc định là web)
+let doubleClickCount = 0;
+let doubleClickTimeout = null;
+let tripleClickCount = 0;
+let tripleClickTimeout = null;
 
 switchButton.addEventListener('click', () => {
-  const inputs = document.querySelectorAll('input'); // Lấy tất cả input
-
+  // Chuyển đổi type text thành pass và ngược lại
   if (isPassword) {
-    inputs.forEach(input => input.type = 'text'); // Duyệt qua từng input và thay đổi type
+    inputs.forEach(input => input.type = 'text');
   } else {
-    inputs.forEach(input => input.type = 'password'); // Duyệt qua từng input và thay đổi type
+    inputs.forEach(input => input.type = 'password');
   }
-
   isPassword = !isPassword;
 
-  // Chuyển đổi src của iframe
-  if (ishside) {
-    iframe.src = '../hside/hside.html';
-  } else {
-    iframe.src = 'https://video.twimg.com/ext_tw_video/1793746588835151872/pu/vid/avc1/480x600/A5uk5GX1yeCzXXgA.mp4';
+  // Ẩn/hiện thẻ div `ngan-ao`
+  doubleClickCount++;
+
+  if (doubleClickTimeout) {
+    clearTimeout(doubleClickTimeout);
   }
-  ishside = !ishside;
+
+  doubleClickTimeout = setTimeout(() => {
+    if (doubleClickCount === 2) {
+      nganAoDiv.classList.toggle('hidden');
+    }
+
+    doubleClickCount = 0;
+  }, 1000); // 1 giây
+
+  // Thay đổi link iframe
+  tripleClickCount++;
+
+  if (tripleClickTimeout) {
+    clearTimeout(tripleClickTimeout);
+  }
+
+  tripleClickTimeout = setTimeout(() => {
+    if (tripleClickCount === 3) {
+      if (iframe.src === 'https://video.twimg.com/ext_tw_video/1793746588835151872/pu/vid/avc1/480x600/A5uk5GX1yeCzXXgA.mp4') {
+        iframe.src = '../hside/hside.html';
+      } else {
+        iframe.src = 'https://video.twimg.com/ext_tw_video/1793746588835151872/pu/vid/avc1/480x600/A5uk5GX1yeCzXXgA.mp4';
+      }
+    }
+
+    tripleClickCount = 0;
+  }, 1000); // 1 giây
 });
 
 
