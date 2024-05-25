@@ -55,7 +55,7 @@ const spans = document.querySelectorAll(".chu-chay span");
 
 for (let i = 0; i < spans.length; i++) {
   spans[i].style.animationDelay = `${i * 0.5}s`;
-}
+};
 
 
 //switch-pass
