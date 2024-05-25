@@ -468,7 +468,7 @@ input:after:first-child {
 
  }
  
-  .ul-bq {background-color: rgb(200, 200, 250);
+  .ul-bq {background-img: url('../image/npp.webp');
               padding: 0.625em;
               bottom: 1%;
               height: 98%;
