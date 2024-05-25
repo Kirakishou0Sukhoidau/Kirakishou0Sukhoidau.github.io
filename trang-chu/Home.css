@@ -469,6 +469,8 @@ input:after:first-child {
  }
  
   .ul-bq {background-image: url("../image/npp.webp");
+    background-repeat: no repeat;
+    background-size: 100% 100%;
               padding: 0.625em;
               bottom: 1%;
               height: 98%;
@@ -479,7 +481,7 @@ input:after:first-child {
               list-style: none;
               text-align: left;
               overflow-y: scroll;
-}
+         }
 
 .pul-bq {color: azure;
         }
