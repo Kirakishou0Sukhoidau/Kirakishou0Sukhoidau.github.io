@@ -452,7 +452,7 @@ input:after:first-child {
 
 
   .mui-ten-len {
-       background-image: url("../image/mtlp.webp");
+   background-image: url("../image/mtlp.webp");
     opacity: 1;
     background-size: 100% 100%;
    bottom: 0px;
@@ -468,7 +468,7 @@ input:after:first-child {
 
  }
  
-  .ul-bq {background-img: url("../image/npp.webp");
+  .ul-bq {background-image: url("../image/npp.webp");
               padding: 0.625em;
               bottom: 1%;
               height: 98%;
