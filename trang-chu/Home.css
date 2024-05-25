@@ -12,7 +12,13 @@ header {z-index: +10;}
   z-index: +5;
 }
 
-
+#switch-pass {
+    background-color: pink; 
+    width: max-content; 
+    margin: 0.3125em auto; 
+    padding: 0.125em; 
+    border: 1px solid black;
+}
 
 
 #thccth {display: flex;
