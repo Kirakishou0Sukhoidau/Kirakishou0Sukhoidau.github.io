@@ -479,9 +479,10 @@ input:after:first-child {
               list-style: none;
               text-align: left;
               overflow-y: scroll;
-         
 }
 
+.pul-bq {color: azure;
+        }
 
  #app {margin: 5px;}
  #app>a>img {width: 50px;}
