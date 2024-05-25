@@ -58,7 +58,21 @@ for (let i = 0; i < spans.length; i++) {
 }
 
 
+//switch-pass
+const switchButton = document.getElementById('switch-pass');
 
+let isPassword = false;
+
+switchButton.addEventListener('click', () => {
+  const inputs = document.querySelectorAll('input'); // Lấy tất cả input
+
+  if (isPassword) {
+    inputs.forEach(input => input.type = 'text'); // Duyệt qua từng input và thay đổi type
+  } else {
+    inputs.forEach(input => input.type = 'password'); // Duyệt qua từng input và thay đổi type
+  }
+
+  isPassword = !isPassword;
 
 
 
