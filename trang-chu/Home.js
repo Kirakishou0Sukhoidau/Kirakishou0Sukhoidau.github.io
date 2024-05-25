@@ -59,7 +59,8 @@ for (let i = 0; i < spans.length; i++) {
 
 
 //switch-pass
-/*const switchButton = document.getElementById('switch-pass');
+const switchButton = document.getElementById('switch-pass');
+const switchButton = document.getElementById('switch-pass');
 
 let isPassword = false;
 
@@ -73,7 +74,7 @@ switchButton.addEventListener('click', () => {
   }
 
   isPassword = !isPassword;
-*/
+});
 
 
 /*const mainImage = document.querySelector(".slideshow-main-image img");
