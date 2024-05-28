@@ -568,6 +568,9 @@ viiideos.forEach(video => {
         case "qtm":
           url = "https://quantrimang.com/s/?q=" + query;
           break;
+           case "font-awesome":
+          url = "https://fontawesome.com/search?q=" + query + "&o=r&m=free";
+          break;
           case "fd":
           url = "https://" + query + ".fandom.com/";
           break;
