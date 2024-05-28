@@ -690,6 +690,9 @@ viiideos.forEach(video => {
           case "pixiv r18":
           url = "https://www.pixiv.net/en/tags/" + query + "/artworks?mode=r18";
           break;
+           case "font-awesome":
+          url = "https://fontawesome.com/search?q=" + query + "&o=r&m=free";
+          break;
           case "cardyugioh":
           url = "https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=1&sess=1&rp=10&mode=&sort=1&keyword=" + query + "&stype=1&ctype=&othercon=2&starfr=&starto=&pscalefr=&pscaleto=&linkmarkerfr=&linkmarkerto=&link_m=2&atkfr=&atkto=&deffr=&defto=&releaseDStart=1&releaseMStart=1&releaseYStart=1999&releaseDEnd=&releaseMEnd=&releaseYEnd=";
           break;
