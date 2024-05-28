@@ -443,14 +443,25 @@ input:after:first-child {
     }
 
  b {font-weight: bold;}
+
+
    .Hello {border: 1px solid black;
      color: purple; 
      display: inline;
    /*  text-align: center;
      margin: 0 auto;
-     ;*/
-     
+     ;*/ 
    }
+
+
+ #ngay, #gio {
+   background-color: black; 
+   margin: 0 auto; 
+   width: max-content; 
+   color: white;
+ }
+
+
 
      h2.h2-p {margin:0 auto; 
        text-align: center; 
