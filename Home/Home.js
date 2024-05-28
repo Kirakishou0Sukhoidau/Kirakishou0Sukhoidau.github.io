@@ -305,6 +305,37 @@ doiBgElement.addEventListener("click", function() {
 });
 
 
+//time
+function hienThiNgayThangNam() {
+  const now = new Date();
+  const thu = now.getDay();
+  const ngay = now.getDate();
+  const thang = now.getMonth() + 1;
+  const nam = now.getFullYear();
+
+  const tenThu = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"][thu];
+  const tenThang = ["Tháng Một", "Tháng Hai", "Tháng Ba", "Tháng Tư", "Tháng Năm", "Tháng Sáu", "Tháng Bảy", "Tháng Tám", "Tháng Chín", "Tháng Mười", "Tháng Mười Một", "Tháng Mười Hai"][thang - 1];
+
+  const ngayThangNam = `${tenThu}, ${ngay} tháng ${tenThang} năm ${nam}`;
+  document.getElementById("ngay").innerHTML = ngayThangNam;
+}
+
+function hienThiGioPhutGiay() {
+  const now = new Date();
+  const gio = now.getHours();
+  const phut = now.getMinutes();
+  const giay = now.getSeconds();
+
+  const gioPhutGiay = `${gio < 10 ? `0${gio}` : gio}:${phut < 10 ? `0${phut}` : phut}:${giay < 10 ? `0${giay}` : giay}`;
+  document.getElementById("gio").innerHTML = gioPhutGiay;
+}
+
+setInterval(hienThiNgayThangNam, 1000);
+setInterval(hienThiGioPhutGiay, 1000);
+
+
+
+
 
 //doi-4mat
 const switchButton = document.getElementById('switch-pass');
