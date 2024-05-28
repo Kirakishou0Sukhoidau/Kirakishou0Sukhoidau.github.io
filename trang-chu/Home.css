@@ -392,6 +392,14 @@ input:after:first-child {
      
    }
 
+ #ngay, #gio {
+   background-color: black; 
+   margin: 0 auto; 
+   width: max-content; 
+   color: white;
+ }
+
+
      h2.h2-p {margin:0 auto; 
        text-align: center; 
        color: white; 
