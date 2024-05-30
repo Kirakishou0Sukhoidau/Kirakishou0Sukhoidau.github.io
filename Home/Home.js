@@ -536,34 +536,30 @@ muiTenLen.addEventListener('click', () => {
 });
 
 //url
-const surl = document.getElementById('surl');
+const inputURL = document.getElementById('input-link');
+const searchEngineLinkSelect = document.getElementById('search-engine-link');
+const submitButton = document.getElementById('button-link');
 
-    // Lấy link từ ô input
-        const linkType = surl.querySelector('select[name="linkType"]');
+// Lắng nghe sự kiện thay đổi trên thẻ select
+searchEngineLinkSelect.addEventListener('change', function(event) {
+  const selectedOptionValue = event.target.value;
+  const currentURL = inputURL.value;
+const newURL = selectedOptionValue + currentURL.replace(/^[a-z]+:\/[^\/]*\/?/, '');
+inputURL.value = newURL;
+});
 
-        surl.addEventListener('submit', (event) => {
-            event.preventDefault();
+// Lắng nghe sự kiện click trên nút "Go!"
+submitButton.addEventListener('click', function(event) {
+  event.preventDefault(); // Phá vỡ hành vi mặc định của nút submit
 
-            // Lấy link từ ô input
-            const link = surl.querySelector('input[name="link"]').value;
-
-            // Xác định loại link
-            /*const typesurl = linkType.value;
-
-            // Thêm view-source: nếu cần thiết
-            if (typesurl === 'view-source') {
-                link = 'view-source:' + link;
-            }*/
-
-            // Kiểm tra nếu link không bắt đầu bằng http:// hoặc https://
-            if (!link.startsWith('http://') && !link.startsWith('https://')) {
-                link = 'https://' + link;
-            }
-
-            // Chuyển đến link
-           /* window.location.href = link;*/
-            window.open(link, '_blank');
-        });
+  const urlss = inputURL.value;
+  if (urlss) {
+    // Sử dụng window.location.href để mở URL trong tab/cửa sổ mới
+    window.location.href = urlss;
+  } else {
+    alert('Vui lòng nhập đường dẫn!');
+  }
+});
 
 /*
 const hienBgt = document.getElementById('hien-chu');
