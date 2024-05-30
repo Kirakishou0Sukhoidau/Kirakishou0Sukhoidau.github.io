@@ -158,18 +158,18 @@
  </form>
       </div>
     
-        <div id="url">
-     
     <form id="surl" action="#">
 
-        <input style="text-align: left;" id="urls" type="text" name="link" placeholder="Nhập link" value="https://"> <br>
+        <input style="text-align: left;" id="input-link" type="text" name="link" placeholder="Nhập link" value="https://"> <br>
+    
       
-        <button id="submit-linkType" type="submit">Go!</button>
-      <!--select name="linkType">
-            <option value="default">Mặc định</option>
-            <option value="view-source">View Source</option>
-        </select-->
-      <button id="submits-linkType" onclick="showCode()">Xem Code</button>
+        <button id="button-link">Go!</button>
+        
+        <select id="search-engine-link">
+          <option value="http://">http://</option>
+          <option value="https://" selected>https://</option>
+          <option value="intent://">intent://</option>
+  </select>
       <button id="reset" type="reset"> Xoá hết</button>
 
     </form>
