@@ -367,6 +367,7 @@ input:after:first-child {
          position: center;
          position: relative;
          border: 1.5px solid rgb(135, 206, 250);
+         outline: none;
        }
  
 
@@ -690,6 +691,16 @@ ul {list-style: none;}
 
 
 
+ .search #input-search:focus {
+   border: 1px solid purple;
+ }
+ .search2 #input-quet:focus {
+   border: 1px solid red;
+   
+ }
+
+
+
  .search #input-search:focus+#lb, .search #input-search:valid+#lb {
                    
                    font-size: 1rem;
@@ -724,6 +735,3 @@ ul {list-style: none;}
                    margin-top: -30px;
                    border: 1px solid white; 
 }
-
-
-
