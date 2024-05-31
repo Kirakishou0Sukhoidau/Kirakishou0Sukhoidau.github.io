@@ -307,6 +307,7 @@ input:after:first-child {
          position: relative;
          border: 1.5px solid rgb(135, 206, 250);
          outline: none;
+         border-radius: 5px;
        }
  
 
