@@ -397,6 +397,31 @@ switchButton.addEventListener('click', () => {
 
 
 
+
+//copy-box
+const copyBox = document.getElementById('copy-box'); // Lấy phần tử p có id "copy-box"
+const copyButton = document.getElementById('copy_box'); // Lấy phần tử button có id "copy_box"
+
+copyButton.addEventListener('click', function() {
+  // Lấy văn bản trong thẻ p
+  const textToCopy = copyBox.textContent;
+
+  // Sử dụng Clipboard API để copy văn bản
+  navigator.clipboard.writeText(textToCopy)
+    .then(() => {
+      // Hiển thị thông báo thành công
+      alert('Đã copy thành công!');
+    })
+    .catch(error => {
+      // Hiển thị thông báo lỗi
+      console.error('Lỗi khi copy văn bản:', error);
+    });
+});
+
+
+
+
+
         
 
 //back-to-top
