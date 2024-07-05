@@ -456,7 +456,7 @@ input:after:first-child {
 
 
  #ngay, #gio {
-   background-color: black; 
+   background-color: rgba(0,0,0,0.2); 
    margin: 0 auto; 
    width: max-content; 
    color: white;
@@ -551,7 +551,7 @@ input:after:first-child {
 
 
   .mui-ten-len {
-   background-image: url("../image/mtl1.webp");
+   background-image: url("../image/fairy2.webp");
     opacity: 1;
     background-size: 100% 100%;
    bottom: 0px;
