@@ -553,6 +553,9 @@ viiideos.forEach(video => {
         case "google":
           url = "https://www.google.com/search?q=" + query;
           break;
+      case "google-img":
+          url = "https://www.google.com/search?q=" + query + " &udm=2";
+          break;
          case "zerochan":        
          url = "https://www.zerochan.net/search?q=" + query;
          break;
