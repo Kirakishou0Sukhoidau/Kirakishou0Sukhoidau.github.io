@@ -732,7 +732,7 @@ viiideos.forEach(video => {
           url = "https://www.google.com/search?q=" + query;
           break;
        case "google-img":
-          url = "https://www.google.com/search?q=" + query + " &udm=2";
+          url = "https://www.google.com/search?q=" + query + "&udm=2";
           break;
         case "rule34":
            url = "https://www.rule34.xxx/index.php?page=post&s=list&tags=" + query;
