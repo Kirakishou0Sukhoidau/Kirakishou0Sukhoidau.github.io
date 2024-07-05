@@ -173,82 +173,6 @@ setTimeout(() => {
 
 
 
-/*const mainImage = document.querySelector(".slideshow-main-image img");
-const thumbnails = document.querySelectorAll(".slideshow-thumbnails img");
-let currentIndex = 0; // Current image index
-
-// Function to change main image based on clicked thumbnail or button click
-function changeImage(image) {
-  mainImage.src = image.src;
-  currentIndex = Array.prototype.indexOf.call(thumbnails, image);
-}*/
-
-// Handle previous image button click
-/*function prevImage() {
-  if (currentIndex >= 0) {
-    currentIndex--;
-    mainImage.src = thumbnails[currentIndex].src;
-  }
-}*/
-
-//duoi
-/*function prevImage() {
-  if (currentIndex === 0) {
-    currentIndex = thumbnails.length - 1; // Quay lại ảnh cuối cùng
-  } else {
-    currentIndex--;
-  }
-  mainImage.src = thumbnails[currentIndex].src;
-}*/
-
-
-
-// Handle next image button click
-/*function nextImage() {
-  if (currentIndex < thumbnails.length) {
-    currentIndex++;
-    mainImage.src = thumbnails[currentIndex].src;
-  }
-}*/
-
-
-//duoi
-/*
-function nextImage() {
-  if (currentIndex < thumbnails.length - 1) {
-    currentIndex++;
-  } else {
-    currentIndex = 0; // Quay lại ảnh đầu tiên khi ở ảnh cuối cùng
-  }
-  mainImage.src = thumbnails[currentIndex].src;
-}
-
-
-
-// Add click event listeners for thumbnails
-thumbnails.forEach((thumbnail) => {
-  thumbnail.addEventListener("click", () => changeImage(thumbnail));
-});
-
-// Add click event listeners for prev and next buttons (if they exist)
-const prevButton = document.getElementById("prev-button");
-const nextButton = document.getElementById("next-button");
-
-if (prevButton) {
-  prevButton.addEventListener("click", prevImage);
-}
-
-if (nextButton) {
-  nextButton.addEventListener("click", nextImage);
-}
-
-// Optional: Auto-play slideshow after 5 seconds
-//setInterval(nextImage, 2000);
-
-/* //dang phong an
-
-
-
 
 
 
@@ -274,6 +198,17 @@ if (nextButton) {
      document.write ("Hỏi chấm?????");
 
      // window.close();
+        };
+      // Kiểm tra xem người dùng đã đồng ý hay chưa
+        var cookieDongy = document.cookie.split(';').find(function(row) {
+            return row.startsWith('dongy=');
+        });
+        if (cookieDongy) {
+            thongbao.style.display = "none"; // Ẩn bảng thông báo
+            backdrop.style.display = "none"; // Ẩn lớp nền mờ
+            // Cho phép người dùng truy cập trang web
+        } else {
+            backdrop.style.display = "block"; // Hiển thị lớp nền mờ
         };
 
 //doi-bg:
@@ -444,29 +379,8 @@ backToTopBtn.addEventListener("click", () => {
 
 
 
-/*
-const inputurl = document.getElementById("usrls");
 
-const valueurlElement = inputurl.querySelector(".value");
-
-if (valueurlElement.textContent === "https://") {
-  valueurlElement.style.color = "red";
-} else {
-  valueurlElement.style.color = "white";
-};*/
-
-
-        // Kiểm tra xem người dùng đã đồng ý hay chưa
-        var cookieDongy = document.cookie.split(';').find(function(row) {
-            return row.startsWith('dongy=');
-        });
-        if (cookieDongy) {
-            thongbao.style.display = "none"; // Ẩn bảng thông báo
-            backdrop.style.display = "none"; // Ẩn lớp nền mờ
-            // Cho phép người dùng truy cập trang web
-        } else {
-            backdrop.style.display = "block"; // Hiển thị lớp nền mờ
-        };
+  
 
  //ip
    const ipEl = document.getElementById("ip");
@@ -631,47 +545,8 @@ muiTenCheo.addEventListener('click', () => {
 
 
 
-
-
-
-/*
-const prevVideoBtn = document.getElementById("prev-video");
-const nextVideoBtn = document.getElementById("next-video");
-const videos = document.querySelectorAll(".video video");
-
-
-
-let currentVideoIndex = 0;
-
-prevVideoBtn.addEventListener("click", () => {
-  if (currentVideoIndex > 0) {
-    videos[currentVideoIndex].pause();
-    videos[currentVideoIndex].style.display = "none";
-    currentVideoIndex--;
-    videos[currentVideoIndex].style.display = "block";
-    videos[currentVideoIndex].play();
-  }
-});
-
-nextVideoBtn.addEventListener("click", () => {
-  if (currentVideoIndex < videos.length - 1) {
-    videos[currentVideoIndex].pause();
-    videos[currentVideoIndex].style.display = "none";
-    currentVideoIndex++;
-    videos[currentVideoIndex].style.display = "block";
-    videos[currentVideoIndex].play();
-  }
-});*/
-
-
-
-
-
 //phat-don-le-1-video
 const videosssi = document.querySelectorAll('video');
-
-
-
 
 
 for (const video of videosssi) {
@@ -685,24 +560,6 @@ for (const video of videosssi) {
 }
 
 
-
-//const videos = document.querySelectorAll(".video video");
-
-/*const viiideos = document.querySelectorAll(".video .vo");
-
-viiideos.forEach(video => {
-  video.addEventListener("click", () => {
-    // Dừng tất cả video đang phát
-    viiideos.forEach(v => v.pause());
-
-    // Phát video được chọn
-    video.play();
-  });
-});*/
-
-//const videoss = document.querySelectorAll('.vio');
-
-// Lặp qua tất cả các video
 
 
 
@@ -805,7 +662,6 @@ viiideos.forEach(video => {
   //mo-o-mot trang
    /*window.location.href = url;*/
     });}
-
 
   handleSearch("search");
 handleSearch("quet");
