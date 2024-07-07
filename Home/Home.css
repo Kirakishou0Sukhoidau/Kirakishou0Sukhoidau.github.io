@@ -314,20 +314,40 @@ h1, span, p {pointer-events: none;}
     font-family: Pinyon Script;
     }
 
-   .Hello {border: 1px solid black;
+  /* .Hello {border: 1px solid black;
      color: purple; 
-     display: inline;
+     display: inline;*/
    /*  text-align: center;*/
-     margin-bottom: 0.1875em;
+   /*  margin-bottom: 0.1875em;
      
-   }
+   }*/
 
 
- #ngay, #gio {
+/* #ngay, #gio {
    background-color: rgba(0,0,0,0.2); 
    margin: 0 auto; 
    width: max-content; 
    color: white;
+ }*/
+
+
+
+   .Hello {border: 1px solid black;
+     color: purple; 
+     width: max-content;
+     padding: 0.125em;
+     background-clip: text; 
+     background: linear-gradient(to right, pink 0%, white 100%);
+     margin: 0px auto;
+  /*   text-align: center; */
+   }
+
+ #ngay, #gio {
+   background-color: rgba(0,0,0,0.2);
+   margin: 0 auto; 
+   width: max-content; 
+   color: white;
+   
  }
 
 
