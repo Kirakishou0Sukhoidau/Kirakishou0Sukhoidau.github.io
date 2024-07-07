@@ -314,6 +314,23 @@ h1, span, p {pointer-events: none;}
     font-family: Pinyon Script;
     }
 
+   .Hello {border: 1px solid black;
+     color: purple; 
+     display: inline;
+   /*  text-align: center;*/
+     margin-bottom: 0.1875em;
+     
+   }
+
+
+ #ngay, #gio {
+   background-color: rgba(0,0,0,0.2); 
+   margin: 0 auto; 
+   width: max-content; 
+   color: white;
+ }
+
+
   
 
 
@@ -328,9 +345,12 @@ h1, span, p {pointer-events: none;}
     border: 1px solid black;
       margin: 1.2px;
     }
+
   .ti {background-color: white;
       border: 1px black;
   }
+
+
   #submit-search,
  #form-search, .search, .search2,
  #form-quet, #surl{
@@ -446,21 +466,6 @@ input:after:first-child {
  b {font-weight: bold;}
 
 
-   .Hello {border: 1px solid black;
-     color: purple; 
-     display: inline;
-   /*  text-align: center;
-     margin: 0 auto;
-     ;*/ 
-   }
-
-
- #ngay, #gio {
-   background-color: rgba(0,0,0,0.2); 
-   margin: 0 auto; 
-   width: max-content; 
-   color: white;
- }
 
 
 
