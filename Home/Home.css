@@ -338,7 +338,7 @@ h1, span, p {pointer-events: none;}
      padding: 0.125em;
      background-clip: text; 
      background: linear-gradient(to right, pink 0%, white 100%);
-     margin: 0px auto;
+    /*margin: 0px auto;*/
   /*   text-align: center; */
    }
 
