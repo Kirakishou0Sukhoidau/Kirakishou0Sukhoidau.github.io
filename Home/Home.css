@@ -613,6 +613,56 @@ input:after:first-child {
 }
 
 
+
+#app-android {
+}
+
+.h-app {
+  background-color: blueviolet;
+}
+
+.app-android .appmot,.app-android .apphai {
+     display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-app {
+  color: black;
+  margin: 0px 0.625em 0px 0.625em;
+  width: 4.375em;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+.app-android .appmott, .app-android .apphaii {
+  height: 3.4375em;
+  width: 3.4375em;
+  margin: 0.3125em;
+  border: 0.28125em solid white;
+  border-radius: 30%;
+  background-color: white;
+}
+
+
+
+.app-android {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
  #app {margin: 5px;}
  #app>a>img {width: 50px;}
 
