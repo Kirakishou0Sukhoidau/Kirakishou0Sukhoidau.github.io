@@ -151,7 +151,7 @@
    
 
 
-.search2 #input-quet:focus+#lb2, .search2 #input-quet:valid+#lb2{ 
+.search2 #input-quet:focus+#lb2, .search2 #input-quet:valid+#lb2 { 
                    font-size: 1rem;
                    color: rgb(255, 192, 0); 
                    font-weight: bold;
@@ -167,5 +167,8 @@
                    border: 1px solid white;
 }
 
+  #app-android {
+    display: none;
+  }
  }
 
