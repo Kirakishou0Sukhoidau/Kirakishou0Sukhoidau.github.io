@@ -167,5 +167,8 @@
                    border: 1px solid white;
 }
 
+  #app-android {
+    display: none;
+  }
  }
 
