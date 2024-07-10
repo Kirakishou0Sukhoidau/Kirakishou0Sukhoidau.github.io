@@ -415,6 +415,7 @@ input:after:first-child {
   border: 0.28125em solid white;
   border-radius: 30%;
   background-color: white;
+  pointer-events: none;
 }
 
 
