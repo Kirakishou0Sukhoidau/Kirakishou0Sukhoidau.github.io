@@ -1,3 +1,6 @@
+@media (max-width: 740px){
+
+
 .an {display: none;
   background-color: white;
    background-size: 100% 100%;
@@ -809,4 +812,7 @@ ul {list-style: none;}
                    padding: 0.125em 0.3125em 0.125em 0.3125em;
                    margin-top: -30px;
                    border: 1px solid white; 
+}
+
+
 }
