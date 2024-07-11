@@ -797,7 +797,7 @@ ul {list-style: none;}
    
 
 
-.search2 #input-quet:focus+#lb2, .search2 #input-quet:valid+#lb2{ 
+.search2 #input-quet:focus+#lb2, .search2 #input-quet:valid+#lb2 { 
                    font-size: 1rem;
                    color: rgb(255, 192, 0); 
                    font-weight: bold;
