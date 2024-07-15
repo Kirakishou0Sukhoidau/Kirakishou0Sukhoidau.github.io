@@ -63,7 +63,7 @@ form select:hover {
   background: pink;
 }
 
-.app-android a .appmott:hover, .app-android a .apphaii:hover {
+.app-android a .appmott:hover,/* .app-android a .apphaii:hover*/ {
   border: none;
   border-radius: 30%;
   background-color: pink;
