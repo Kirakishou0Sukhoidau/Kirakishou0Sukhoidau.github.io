@@ -268,20 +268,7 @@ body {background: black;
 
 /* Keyframes cho hiệu ứng delay */
 
-@keyframes delay-cycle {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+
 
 /* Áp dụng hiệu ứng delay */
 
@@ -360,10 +347,12 @@ h1, span, p {pointer-events: none;}
   }
    #toggle-tools, #toggle-tools2,
     #toggle-tools3, #toggle-delta
-  {width: 25px;
+  {
+    width: 25px;
     height: 25px;
     border: 1px solid black;
-      margin: 1.2px;
+    margin: 1.2px;
+    transition: all 0.5s ease-in-out;
     }
 
   .ti {background-color: white;
@@ -378,7 +367,8 @@ h1, span, p {pointer-events: none;}
    position: relative;
  }
 
-.search2, .search, #url {margin-top: 5px;
+.search2, .search, #url {
+  margin-top: 5px;
   position: relative;
 }
 
@@ -419,6 +409,7 @@ input:after:first-child {
          text-align: center;
          align-items: center;
         height: 22px;
+        transition: all 0.1s ease-in-out;
       
     }
       
@@ -429,6 +420,7 @@ input:after:first-child {
     background-color: pink;
     padding: 0 0.125em;
     border: 2px solid black;
+   transition: all 0.5s ease-in-out;
   }
 
  select {width: max-content;
@@ -436,6 +428,7 @@ input:after:first-child {
     padding: 0 0.125em;
     text-align: center;
     border: 1px solid black;
+   transition: all 0.3s ease-in-out;
   }
   
     
@@ -589,7 +582,7 @@ input:after:first-child {
     padding: 0.625em;
     z-index: 3;
     border: 1px solid black;
-
+    transition: all 0.3s ease-in-out;
  }
 
 .pul-bq {color: black;
