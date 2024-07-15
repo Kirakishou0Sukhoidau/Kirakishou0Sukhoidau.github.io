@@ -437,7 +437,13 @@ input:after:first-child {
    transition: all 0.3s ease-in-out;
   }
   
-    
+   
+
+
+#tools {
+  position: relative;
+  z-index: 2;
+} 
      
   
     h4.bgb-tw {
