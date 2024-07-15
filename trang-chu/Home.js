@@ -409,7 +409,7 @@ thembordermtl.addEventListener('click', function() {
     thembordermtl.style.border = 'none';
     hasBorder = false;
   } else {
-    thembordermtl.style.border = '0.4375em solid black';
+    thembordermtl.style.border = '0.4375em solid violet';
     hasBorder = true;
   }
 });
