@@ -70,6 +70,13 @@ form select:hover {
 }
 
 
+.app-android .appmott:hover /*, .app-android .apphaii*/ {
+  border: none;
+  border-radius: 30%;
+  background-color: pink;
+}
+
+
 #back-to-top:hover {
   overflow: 0.5;
 }
