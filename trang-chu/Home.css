@@ -405,7 +405,7 @@ transition: all 0s ease-in-out;
   background-color: blueviolet;
 }
 
-.app-android .appmot /*,.app-android .apphai*/ {
+.app-android .appmot {
      display: flex;
   flex-direction: column;
   align-items: center;
@@ -420,7 +420,7 @@ transition: all 0s ease-in-out;
 }
 
 
-.app-android .appmott /*, .app-android .apphaii*/ {
+.app-android a .appmott {
   height: 3.4375em;
   width: 3.4375em;
   margin: 0.3125em;
