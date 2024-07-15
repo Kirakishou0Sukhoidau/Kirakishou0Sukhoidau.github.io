@@ -262,14 +262,20 @@ h1, span, p {pointer-events: none;}
   }
    #toggle-tools, #toggle-tools2,
     #toggle-tools3, #toggle-delta
-  {width: 25px;
+  {
+width: 25px;
     height: 25px;
     border: 1px solid black;
       margin: 1.2px;
+transition: all 0.5s ease-in-out;
     }
+
+
   .ti {background-color: white;
       border: 1px black;
   }
+
+
   #submit-search,
  #form-search, .search, .search2,
  #form-quet, #surl{
@@ -280,6 +286,7 @@ h1, span, p {pointer-events: none;}
 .search2, .search, #url {margin-top: 5px;
   position: relative;
 }
+
 
 input::after {
   content: attr(value);
@@ -319,16 +326,21 @@ input:after:first-child {
          text-align: center;
          align-items: center;
         height: 22px;
-      
+      transition: all 0.2s ease-in-out;
     }
       
     .img {margin: 0 auto ; height: 3cm; display:block;}
 
 
+form button {
+transition: all 0s ease-in-out;
+}
+
   button {width: max-content;
     background-color: pink;
     padding: 0 0.125em;
     border: 2px solid black;
+    
   }
 
  select {width: max-content;
