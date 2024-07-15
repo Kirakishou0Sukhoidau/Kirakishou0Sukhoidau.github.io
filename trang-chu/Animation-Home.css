@@ -64,7 +64,7 @@ form select:hover {
 }
 
 .app-android a:hover .appmott {
-  border: 0px solid white;
+  border: none;
   border-radius: 30%;
   background-color: pink;
 }
