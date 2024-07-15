@@ -420,7 +420,7 @@ transition: all 0s ease-in-out;
 }
 
 
-.app-android a .appmott {
+.app-android .appmott {
   height: 3.4375em;
   width: 3.4375em;
   margin: 0.3125em;
@@ -428,8 +428,12 @@ transition: all 0s ease-in-out;
   border-radius: 30%;
   background-color: white;
   pointer-events: none;
-  transition: opacity 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
+
+
+
+
 
 
 
