@@ -544,7 +544,7 @@ transition: all 0s ease-in-out;
     padding: 0.625em;
     z-index: 3;
     border: 1px solid black;
-    transition: opacity 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
  }
  
   .ul-bq {background-image: url("../image/npp.webp");
