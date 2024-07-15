@@ -474,6 +474,25 @@ muiTenLen.addEventListener('click', () => {
   ulBq.classList.toggle('hidden');
 });
 
+
+const thembordermtl = document.querySelector('.mui-ten-len');
+let hasBorder = false;
+
+thembordermtl.addEventListener('click', function() {
+  if (hasBorder) {
+    thembordermtl.style.border = 'none';
+    hasBorder = false;
+  } else {
+    thembordermtl.style.border = '0.4375em solid black';
+    hasBorder = true;
+  }
+});
+
+
+
+
+
+
 //url
 const inputURL = document.getElementById('input-link');
 const searchEngineLinkSelect = document.getElementById('search-engine-link');
