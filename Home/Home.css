@@ -355,6 +355,12 @@ h1, span, p {pointer-events: none;}
     transition: all 0.5s ease-in-out;
     }
 
+
+form button {
+transition: all 0s ease-in-out;
+}
+
+
   .ti {background-color: white;
       border: 1px black;
   }
@@ -420,8 +426,8 @@ input:after:first-child {
     background-color: pink;
     padding: 0 0.125em;
     border: 2px solid black;
-   transition: all 0.5s ease-in-out;
   }
+
 
  select {width: max-content;
     background-color: pink;
