@@ -484,30 +484,6 @@ setInterval(() => {
 
 
 
-
-const ulBq = document.querySelector('.ul-bq');
-const muiTenLen = document.querySelector('.mui-ten-len');
-
-muiTenLen.addEventListener('click', () => {
-  ulBq.classList.toggle('hidden');
-});
-
-const element = document.querySelector('.mui-ten-len');
-let hasBorder = false;
-
-element.addEventListener('click', function() {
-  if (hasBorder) {
-    element.style.border = 'none';
-    hasBorder = false;
-  } else {
-    element.style.border = '0.4375em solid black';
-    hasBorder = true;
-  }
-});
-
-
-
-
 const ulBq = document.querySelector('.ul-bq');
 const muiTenLen = document.querySelector('.mui-ten-len');
 
