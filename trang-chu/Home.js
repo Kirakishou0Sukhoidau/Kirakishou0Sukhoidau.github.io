@@ -406,7 +406,7 @@ setInterval(() => {
       button.classList.remove('bo-tron-toolg');
     }
   });
-}, ); // Thay đổi giá trị trong bằng thời gian kiểm tra mong muốn (tính bằng mili giây)
+}, 3000 ); // Thay đổi giá trị trong bằng thời gian kiểm tra mong muốn (tính bằng mili giây)
 
 
 
