@@ -433,33 +433,14 @@ toggleButtons.forEach((button, index) => {
   button.addEventListener("click", () => {
     const currentTools = toolsContainers[index];
 
-    // Toggle button styles based on content
-    if (button.textContent === "✕") {
-      button.style.width = "26px";
-      button.style.height = "26px";
-        button.style.backgroundColor = "pink";
-      button.style.border = "1px solid black";
-      button.style.margin = "1.2px";
-      button.style.borderRadius = "0";
-    } else {
-      button.style.width = "26px";
-      button.style.height = "26px";
-      button.style.border = "1px solid black";
-      button.style.backgroundColor = "white";
-      button.style.color = "black";
-      button.style.borderRadius = "50%";
-      button.style.margin = "0";
-    }
-
-    // Rest of the original functionality
-    if (button.textContent === "✕") {
+        if (button.textContent === "✕") {
       currentTools.style.display = "none";
       button.textContent = "☰";
       return; // Exit this click handler to prevent further actions
     }
 
     if (isMultiSelectionEnabled) {
-      currentTools.style.display = currentTools.style.display === "none" ? "block" : "none";
+            currentTools.style.display = currentTools.style.display === "none" ? "block" : "none";
       button.textContent = currentTools.style.display === "block" ? "✕" : "☰";
     } else {
       // Multi-selection disabled, close all others, open clicked one
@@ -483,6 +464,45 @@ headings.forEach(heading => {
     const content = this.nextElementSibling;
     content.style.display = content.style.display === "block" ? "none" : "block";
   });
+});
+
+
+
+const buttonsbtt = document.querySelectorAll('#toolg button');
+
+setInterval(() => {
+  buttonsbtt.forEach(button => {
+    const buttonText = button.textContent;
+    if (buttonText === '✕') {
+      button.classList.add('bo-tron-toolg');
+    } else {
+      button.classList.remove('bo-tron-toolg');
+    }
+  });
+}, ); // Thay đổi giá trị trong bằng thời gian kiểm tra mong muốn (tính bằng mili giây)
+
+
+
+
+
+const ulBq = document.querySelector('.ul-bq');
+const muiTenLen = document.querySelector('.mui-ten-len');
+
+muiTenLen.addEventListener('click', () => {
+  ulBq.classList.toggle('hidden');
+});
+
+const element = document.querySelector('.mui-ten-len');
+let hasBorder = false;
+
+element.addEventListener('click', function() {
+  if (hasBorder) {
+    element.style.border = 'none';
+    hasBorder = false;
+  } else {
+    element.style.border = '0.4375em solid black';
+    hasBorder = true;
+  }
 });
 
 
