@@ -267,8 +267,8 @@ h1, span, p {pointer-events: none;}
      #toggle-tools, #toggle-tools2,
     #toggle-tools3, #toggle-delta
   {
-    width: 26px;
-    height: 26px;
+    width: 25px;
+    height: 25px;
     border: 1px solid black;
     margin: 1.2px;
     }
