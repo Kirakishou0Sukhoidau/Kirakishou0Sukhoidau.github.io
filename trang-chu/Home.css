@@ -264,8 +264,7 @@ h1, span, p {pointer-events: none;}
   }
 
 
-   #toggle-tools, #toggle-tools2,
-    #toggle-tools3, #toggle-delta
+      #toggle-tools, #toggle-tools2, #toggle-tools3, #toggle-delta
   {
     width: 26px;
     height: 26px;
