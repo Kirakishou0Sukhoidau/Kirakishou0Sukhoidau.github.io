@@ -237,7 +237,7 @@ window.onload = function() {
 
   dongy.onclick = function() {
     if (isValid) {
-      document.cookie = "dongy=true; /*expires=Mon, 01 Dec 2025 12:00:00 GMT";*/
+      document.cookie = "dongy=true"; /*expires=Mon, 01 Dec 2025 12:00:00 GMT*/
       thongbao.style.display = "none";
       backdrop.style.display = "none";
     } else {
