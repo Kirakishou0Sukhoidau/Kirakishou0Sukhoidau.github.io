@@ -181,8 +181,8 @@ setTimeout(() => {
 
 
 //bang thong bao
-  /*  alert ("Xin chào tiểu thư") */
- /* var thongbao = document.getElementById("thongbao");
+  /*  alert ("Xin chào tiểu thư Kirakishou") */
+ var thongbao = document.getElementById("thongbao");
         var backdrop = document.getElementById("backdrop");
         var dongy = document.getElementById("dongy");
         var khongdongy = document.getElementById("khongdongy");
@@ -209,62 +209,9 @@ setTimeout(() => {
             // Cho phép người dùng truy cập trang web
         } else {
             backdrop.style.display = "block"; // Hiển thị lớp nền mờ
-        };*/
+        };
 
 
-
-window.onload = function() {
-
-  let isValid = false;
-
-  const formCapcha = document.getElementById("thongbao");
-  const errorCapcha = document.getElementById("capcha-loi");
-  const dongy = document.getElementById("dongy");
-  const khongdongy = document.getElementById("khongdongy");
-  const backdrop = document.getElementById("backdrop");
-
-  formCapcha.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const response = grecaptcha.getResponse();
-    if (response) {
-      isValid = true;
-      formCapcha.submit();
-    } else {
-      errorCapcha.innerHTML = "Vui lòng xác nhận reCaptcha";
-    }
-  });
-
-  dongy.onclick = function() {
-    if (isValid) {
-      document.cookie = "dongy=true"; /*expires=Mon, 01 Dec 2025 12:00:00 GMT*/
-      thongbao.style.display = "none";
-      backdrop.style.display = "none";
-    } else {
-      errorCapcha.innerHTML = "Vui lòng xác nhận reCaptcha";
-    }
-  };
-
-  khongdongy.onclick = function() {
-    if (isValid) {
-      document.write("Hỏi chấm?????");
-      // window.close();
-    } else {
-      errorCapcha.innerHTML = "Vui lòng xác nhận reCaptcha";
-    }
-  };
-
-  // Check if the user has already agreed
-  var cookieDongy = document.cookie.split(';').find(function(row) {
-    return row.startsWith('dongy=');
-  });
-  if (cookieDongy) {
-    thongbao.style.display = "none";
-    backdrop.style.display = "none";
-  } else {
-    backdrop.style.display = "block";
-  };
-};
 
 
 
