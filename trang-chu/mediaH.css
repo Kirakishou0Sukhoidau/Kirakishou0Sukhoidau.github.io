@@ -91,7 +91,7 @@
  }
 
  @media(min-width: 1080px) {
-          html {max-width: 960px;
+          html {
     margin: 5px;
     text-align: center;
        flex-direction: column;
