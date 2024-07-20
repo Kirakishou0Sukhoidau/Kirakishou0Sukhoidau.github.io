@@ -1,4 +1,4 @@
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
   html {
     margin: 5px;
     text-align: center;
@@ -88,7 +88,11 @@
    
  }
 
- @media (min-width: 1024px) {
+ 
+
+
+
+@media (min-width: 64em) {
      html {max-width: 960px;
     margin: 5px;
     text-align: center;
