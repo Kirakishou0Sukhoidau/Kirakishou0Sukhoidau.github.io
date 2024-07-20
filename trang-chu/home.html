@@ -63,6 +63,20 @@
   
         <div id="thongbao">
         <p class="tmw">Bạn cần đồng ý với <a href="../dkvdv/dkvadv.html" target="_blank">Điều khoản</a> để sử dụng trang web này.</p>
+
+
+
+           <form id="reCaptcha-g" style="z-index: 3; position: static;" action="#" method="POST">
+
+      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+
+      <br/>
+
+    </form>
+         
+         <div id="capcha-loi"></div>
+
+
         <button id="dongy">Đồng ý</button>
         <button id="khongdongy">Không đồng ý</button>
     </div>
@@ -438,7 +452,8 @@
   </div>
     
     
-    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
      <script src="Home.js"></script>
 </body>
 </html>
