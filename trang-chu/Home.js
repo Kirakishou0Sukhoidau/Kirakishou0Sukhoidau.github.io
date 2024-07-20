@@ -207,58 +207,40 @@ if (nextButton) {
         };*/
 
 
-window.onload = function() {
+var thongbao = document.getElementById("thongbao");
+var backdrop = document.getElementById("backdrop");
+var dongy = document.getElementById("dongy");
+var khongdongy = document.getElementById("khongdongy");
+var errorcapcha = document.getElementById("capcha-loi");
 
-  let isValid = false;
+dongy.onclick = function() {
+  const response = grecaptcha.getResponse();
+  if (response.length === 0) {
+    errorcapcha.innerHTML = "Vui lòng xác nhận reCAPTCHA";
+    return;
+  }
 
-  const formCapcha = document.getElementById("thongbao");
-  const errorCapcha = document.getElementById("capcha-loi");
-  const dongy = document.getElementById("dongy");
-  const khongdongy = document.getElementById("khongdongy");
-  const backdrop = document.getElementById("backdrop");
-
-  formCapcha.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const response = grecaptcha.getResponse();
-    if (response) {
-      isValid = true;
-      formCapcha.submit();
-    } else {
-      errorCapcha.innerHTML = "Vui lòng xác nhận reCaptcha";
-    }
-  });
-
-  dongy.onclick = function() {
-    if (isValid) {
-      document.cookie = "dongy=true"; /*expires=Mon, 01 Dec 2025 12:00:00 GMT;*/
-      thongbao.style.display = "none";
-      backdrop.style.display = "none";
-    } else {
-      errorCapcha.innerHTML = "Vui lòng xác nhận reCaptcha";
-    }
-  };
-
-  khongdongy.onclick = function() {
-    if (isValid) {
-      document.write("Hỏi chấm?????");
-      // window.close();
-    } else {
-      errorCapcha.innerHTML = "Vui lòng xác nhận reCaptcha";
-    }
-  };
-
-  // Check if the user has already agreed
-  var cookieDongy = document.cookie.split(';').find(function(row) {
-    return row.startsWith('dongy=');
-  });
-  if (cookieDongy) {
-    thongbao.style.display = "none";
-    backdrop.style.display = "none";
-  } else {
-    backdrop.style.display = "block";
-  };
+  document.cookie = "dongy=true";//expires= Mon, 01 Dec 2025 12:00:00 GMT";
+  thongbao.style.display = "none";
+  backdrop.style.display = "none";
 };
+
+khongdongy.onclick = function() {
+  document.write ("Hỏi chấm?????");
+};
+
+// Kiểm tra xem người dùng đã đồng ý hay chưa
+var cookieDongy = document.cookie.split(';').find(function(row) {
+  return row.startsWith('dongy=');
+});
+if (cookieDongy) {
+  thongbao.style.display = "none"; // Ẩn bảng thông báo
+  backdrop.style.display = "none"; // Ẩn lớp nền mờ
+  // Cho phép người dùng truy cập trang web
+} else {
+  backdrop.style.display = "block"; // Hiển thị lớp nền mờ
+};
+
 
 
 
