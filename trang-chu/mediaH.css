@@ -151,8 +151,9 @@
 }
 
 
+
    body {
-     width: 100%;
+     max-width: 60em;
      text-align: center;
    }
 
