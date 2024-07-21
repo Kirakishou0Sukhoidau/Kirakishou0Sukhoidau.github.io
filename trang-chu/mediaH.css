@@ -1,4 +1,4 @@
-@media(min-width: 720px) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
   html {
     margin: 5px;
     text-align: center;
@@ -90,7 +90,7 @@
    
  }
 
- @media(min-width: 1080px) {
+ @media (min-width: 64em) {
           html {
     margin: 5px;
     text-align: center;
