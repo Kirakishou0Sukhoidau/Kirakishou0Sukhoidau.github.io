@@ -132,9 +132,6 @@ AnHien.addEventListener("click", function() {
 
 
 
-
-
-
 //load
 
 //xoa-chu-input
@@ -300,16 +297,17 @@ doiBgElement.addEventListener("click", function() {
 function hienThiNgayThangNam() {
   const now = new Date();
   const thu = now.getDay();
-  const ngay = now.getDate();
+   const ngay = now.getDate().toString().padStart(2, '0');
   const thang = now.getMonth() + 1;
   const nam = now.getFullYear();
 
   const tenThu = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"][thu];
-  const tenThang = ["Tháng Một", "Tháng Hai", "Tháng Ba", "Tháng Tư", "Tháng Năm", "Tháng Sáu", "Tháng Bảy", "Tháng Tám", "Tháng Chín", "Tháng Mười", "Tháng Mười Một", "Tháng Mười Hai"][thang - 1];
+  const tenThang = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"][thang - 1];
 
-  const ngayThangNam = `${tenThu}, ${ngay} tháng ${tenThang} năm ${nam}`;
+  const ngayThangNam = `${tenThu}, Ngày ${ngay} tháng ${tenThang} năm ${nam}`;
   document.getElementById("ngay").innerHTML = ngayThangNam;
 }
+
 
 function hienThiGioPhutGiay() {
   const now = new Date();
