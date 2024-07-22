@@ -65,7 +65,47 @@ AnHien.addEventListener("click", function() {
   }
 });
 
+
 let isHidden = true;
+
+window.addEventListener("resize", function() {
+  updateBackground();
+});
+
+AnHien.addEventListener("click", function() {
+  if (isHidden) {
+    // Show background image based on screen width
+    updateBackground();
+    // Hide loading elements
+    load.style.display = "none";
+    loadi.style.display = "none";
+    lood.style.display = "none";
+    isHidden = false;
+  } else {
+          body.style.backgroundImage = "none";
+    body.style.backgroundColor = "black";
+          load.style.display = "block";
+      loadi.style.display = "block";
+      lood.style.display = "none";
+    isHidden = true;
+  }
+});
+
+function updateBackground() {
+  if (window.innerWidth >= 1024) {
+    body.style.backgroundImage = "url(../image/bg2nmp2.webp)";
+  } else if (window.innerWidth >= 740) {
+    body.style.backgroundImage = "url(../image/bg2nmp2.webp)";
+  } else if (window.innerWidth < 740) {
+    body.style.backgroundImage = "url(../image/bg2nmp2.webp)";
+  } else {
+    body.style.backgroundColor = "black";
+  }
+};
+
+
+
+/*let isHidden = true;
 
 AnHien.addEventListener("click", function() {
   if (isHidden) {
@@ -84,7 +124,16 @@ AnHien.addEventListener("click", function() {
       lood.style.display = "none";
     isHidden = true;
   }
-});
+});*/
+
+
+
+
+
+
+
+
+
 
 //load
 
