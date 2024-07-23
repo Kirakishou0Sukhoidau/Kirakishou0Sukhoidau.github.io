@@ -75,6 +75,9 @@ let isHidden = true;
 AnHien.addEventListener("click", function() {
   if (isHidden) {
     // Show background image based on screen width
+      window.addEventListener("resize", function() {
+  updateBackground();
+});
     updateBackground();
     // Hide loading elements
     load.style.display = "none";
