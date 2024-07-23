@@ -427,9 +427,11 @@ transition: all 0s ease-in-out;
 }
 
 .name-app {
-  color: white;
+  background-color: white;
+  font-weight: bold;
+  color: black;
   margin: 0px 0.625em 0px 0.625em;
-  width: 4.375em;
+  width: 6.25em;
   text-align: center;
   pointer-events: none;
 }
