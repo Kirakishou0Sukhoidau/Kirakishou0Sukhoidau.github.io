@@ -68,9 +68,9 @@ AnHien.addEventListener("click", function() {
 
 let isHidden = true;
 
-window.addEventListener("resize", function() {
+/*window.addEventListener("resize", function() {
   updateBackground();
-});
+});*/
 
 AnHien.addEventListener("click", function() {
   if (isHidden) {
@@ -94,9 +94,9 @@ AnHien.addEventListener("click", function() {
 function updateBackground() {
   if (window.innerWidth >= 1024) {
     body.style.backgroundImage = "url(../image/bg2nmp2.webp)";
-  } else if (window.innerWidth >= 740) {
+  } else if (screen.width >= 740) {
     body.style.backgroundImage = "url(../image/bg2nmp2.webp)";
-  } else if (window.innerWidth < 740) {
+  } else if (screen.width < 740) {
     body.style.backgroundImage = "url(../image/bg2nmp2.webp)";
   } else {
     body.style.backgroundColor = "black";
