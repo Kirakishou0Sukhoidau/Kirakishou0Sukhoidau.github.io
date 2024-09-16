@@ -96,3 +96,22 @@ customSizeInput.addEventListener('input', (event) => {
       giaoDienDiv.style.width = customSize + 'px';
     }
   });
+
+
+const resetButton = document.getElementById("reset");
+
+resetButton.addEventListener("click", () => {
+    const allInputs = document.querySelectorAll("input[type='text']");
+    for (const input of allInputs) {
+        input.value = "";
+    }
+});
+
+const resetButton2 = document.getElementById("reset2");
+
+resetButton2.addEventListener("click", () => {
+    const allInputs2 = document.querySelectorAll("input[type='number']");
+    for (const input of allInputs2) {
+        input.value = "";
+    }
+});
