@@ -1,3 +1,4 @@
+
 // Lấy các thẻ textarea
 const htmlInput = document.getElementById('html');
 const cssInput = document.getElementById('css');
@@ -40,7 +41,7 @@ jsInput.addEventListener('input', executeCode);
 executeCode();
   
 
-
+//test-link
   const giaoDienDivl = document.getElementById('giao-dien');
   const urlInput = document.getElementById('urlInput');
 
@@ -81,6 +82,7 @@ customSizeInput.addEventListener('input', (event) => {
 });
 */
 
+//kich-co-man
   const giaoDienDiv = document.getElementById('giao-dien');
   const screenSizeSelector = document.getElementById('screen-size-selector');
   const customSizeInput = document.getElementById('customSize');
@@ -98,6 +100,7 @@ customSizeInput.addEventListener('input', (event) => {
   });
 
 
+//xoa
 const resetButton = document.getElementById("reset");
 
 resetButton.addEventListener("click", () => {
