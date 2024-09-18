@@ -750,6 +750,10 @@ for (const video of videosssi) {
           case "tdwk":
           url = "https://vi.m.wiktionary.org/wiki/" + query;
           break;
+          case "checkscam":
+          url = "https://scam.vn/check-website?domain=" + query;
+          break;
+
       }
   window.open(url, '_blank');
   //mo-o-mot trang
