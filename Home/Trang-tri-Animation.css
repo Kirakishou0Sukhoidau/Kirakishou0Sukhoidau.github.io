@@ -58,7 +58,7 @@ form select:hover {
 }
 
 
-#reset:hover {
+#reset:active {
   background-color: red;
   border: 2px solid violet;
   color: whitesmoke;
