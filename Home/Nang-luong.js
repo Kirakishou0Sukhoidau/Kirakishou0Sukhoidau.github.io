@@ -693,7 +693,7 @@ for (const video of videosssi) {
               case "danbooru":        
          url = "https://danbooru.donmai.us/posts?tags=" + query;
           break;
-          case "pixiv r18":
+          case "pixiv-r18":
           url = "https://www.pixiv.net/en/tags/" + query + "/artworks?mode=r18";
           break;
            case "font-awesome":
